@@ -18,8 +18,8 @@ pipeline {
             steps {
                 bat '''
                 REM Remove old frontend folder if exists
-                if exist "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlibrary" (
-                    rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\reactlibrary"
+                if exist "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\fullstack-react" (
+                    rmdir /S /Q "C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\fullstack-react"
                 )
 
                 REM Create new folder
