@@ -1,0 +1,84 @@
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+/* Container */
+.app-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex: 1 1 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  border-color: #4cafef;
+  outline: none;
+}
+
+form button {
+  flex: 1 1 100%;
+  padding: 12px;
+  background: #4cafef;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: #3a9ad9;
+}
+
+/* Book list */
+.book-list {
+  list-style: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.book-list li {
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #f4f7fa;
+  border-radius: 6px;
+  border-left: 4px solid #4cafef;
+}
+
+.book-list li strong {
+  color: #222;
+}
